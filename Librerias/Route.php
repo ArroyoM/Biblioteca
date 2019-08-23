@@ -8,6 +8,9 @@ class Route{
         /** nueva instancia de nuestro contralor*/
         if ($controller) {
             require_once APP_PATH."Controllers/{$controller}Controller.php";
+            require_once APP_PATH."Models/{$controller}Model.php";
+            require_once APP_PATH."Models/{$controller}.php";
+
             $controllerString = $controller.'Controller';
             $controller = new $controllerString;
 

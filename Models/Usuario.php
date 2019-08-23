@@ -8,16 +8,17 @@ class Usuario{
     private $apellido;
     private $username;
     private $pass;
-
+    private $fecha;
+    private $estado;
 
     public function __construct(){
     }
 
     /**get y set de idpersona */
-    public function getIdpersona(){
+    public function getIdUsuario(){
         return $this->idusuario;
     }
-    public function setIdpersona($idusuario){
+    public function setIdUsuario($idusuario){
         return $this->idusuario = $idusuario;
     }
 
@@ -38,10 +39,10 @@ class Usuario{
     }
 
     /**get y set de username */
-    public function getUsername(){
+    public function getUserName(){
         return $this->username;
     }
-    public function setUsername($username){
+    public function setUserName($username){
         return $this->username = $username;
     }
 
@@ -51,5 +52,21 @@ class Usuario{
     }
     public function setPass($pass){
         return $this->pass = $pass;
+    }
+
+    /**get y set de fecha de creacion */
+    public function getFecha(){
+        return $this->fecha;
+    }
+    public function setFecha($fecha){
+       return $this->fecha = $fecha;
+    }
+
+    /**get y set de estado */
+    public function getEstado(){
+        return $this->estado;
+    }
+    public function setEstado($estado){
+       return $this->estado = $estado;
     }
 }

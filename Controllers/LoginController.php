@@ -13,6 +13,10 @@ class LoginController{
         View::render('Login',[]);
     }
 
+    public function Validar(){
+        
+    }
+
 
 }
 

@@ -6,8 +6,9 @@ class View{
     /** /varialbes si hay sino un array vacio por default*/
     public static function render($vista, array $variables = [])
     {
+        /**convierte el array en variables independientes */
         extract($variables);
-
+        
         require_once  APP_PATH."/views/$vista.php";
     }
 
@@ -22,4 +23,6 @@ class View{
     public static function redirectView($view){
       header('Location:'.PUBLIC_PATH.$view);
     }
+
+
 }

@@ -15,7 +15,7 @@ class Conexion
 
         try{
             /**se crear una nueva conexion */
-            $this->pdo = new PDO("mysql:host={$this->host};dbname={$dbname};charset={$this->charset}",
+            $this->pdo = new PDO("mysql:host={$this->host};dbname={$this->dbname};charset={$this->charset}",
             $this->username, $this->pass);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
             

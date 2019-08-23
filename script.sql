@@ -23,7 +23,10 @@ create table tipo_prestamo(
 
 create table autor(
 	idautor int PRIMARY key AUTO_INCREMENT,
-    nombre varchar(45) not null
+    nombre varchar(45) not null,
+    estado_idestado int,
+    foreign key(estado_idestado) REFERENCES estado(idestado)  
+
 );
 
 

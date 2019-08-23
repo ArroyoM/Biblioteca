@@ -3,10 +3,9 @@
 class UsuarioController{
 
     public function __construct(){
-
     }
 
-    /** controla la vista login */
+    /** controla la vista de inicio index */
     public function Index(){
         
         $usuario = new UsuarioModel();
@@ -101,6 +100,5 @@ class UsuarioController{
         }else{
             View::redirectView('usuarios');
         }
-
     }
 }
